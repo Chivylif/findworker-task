@@ -1,10 +1,10 @@
 # findworker-task
-##Coding Task Invitation for Fullstack Engineers
+## Coding Task Invitation for Fullstack Engineers
 
 At this step, we invite you to complete a small programming task that can take you
 anywhere between a couple of hours up to a full day in total to complete.
 
-###Objective
+## Objective
 This task is designed to provide an opportunity for you to demonstrate general PHP
 based restful API development knowledge in the sense that you:
 ● Write clean, structured, readable, and maintainable code.
@@ -15,7 +15,7 @@ based restful API development knowledge in the sense that you:
 ● Consume your designed API endpoint
 using a frontend technology.
 
-##Task
+## Task
 Create a small set of rest API endpoints using PHP that can be used for listing the
 names of books along with their authors and comment counts, adding and listing
 anonymous comments for a book, and getting the character list for a book.
@@ -24,7 +24,7 @@ endpoint created in your solutions will then be consumed with an interface.
 Kindly note, that the frontend technologies available for the second implementation
 should be one of these ReactJS or VueJS.
 
-##General requirements
+## General requirements
 
 The application should have basic documentation that lists available endpoints
 and methods along with their request and response signatures.
@@ -35,7 +35,7 @@ Keep your application source code on a public Github repository.
 Provide a live demo URL, you could spin up a virtual server on AWS or
 a Heroku instance.
 
-##Data requirements
+## Data requirements
 
 The movie data should be fetched online from
 https://anapioficeandfire.com/
@@ -55,7 +55,7 @@ match the criteria.
 The total height should be provided both in months and in years. For instance,
 28 months is 2.5 in years.
 
-##Comment requirements
+## Comment requirements
 The comment list should be retrieved in reverse chronological order.
 Comments should be retrieved along with the public IP address of the
 commenter and UTC date&time they were stored.
