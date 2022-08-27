@@ -1,10 +1,17 @@
 <?php
 class Database {
-    // DB Params
-    private $host = 'localhost';
-    private $db_name = 'findworker';
-    private $username = 'root';
-    private $password = '';
+    // DB Params For Development
+    // private $host = 'localhost';
+    // private $db_name = 'findworker';
+    // private $username = 'root';
+    // private $password = '';
+    // private $conn;
+
+    //Remote Database Connection
+    private $host = 'remotemysql.com';
+    private $db_name = 'wCndwvuakm';
+    private $username = 'wCndwvuakm';
+    private $password = 'GwpxXxzEKz';
     private $conn;
 
     // DB Connect
