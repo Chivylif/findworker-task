@@ -4,7 +4,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: *');
 header('Content-Type: application/json');
 
-include_once '../../configure/Database.php';
+// include_once '../../configure/Database.php';
 include_once '../../models/Character.php';
 
 $character = new Character();
