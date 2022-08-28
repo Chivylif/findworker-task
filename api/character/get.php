@@ -24,7 +24,7 @@ $character_arr = array();
 $characters = $data['characters'];
 $char_count = count($characters);
 
-for ($i = 0; $i < strlen($characters) $i++) {
+for ($i = 0; $i < strlen($characters); $i++) {
     $url = $characters[$i];
     $id = $character->get_character_id($url);
     $res = $character->get_characters($url);
