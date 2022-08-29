@@ -14,6 +14,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : die();
 $name = isset($_GET['name']) ? $_GET['name'] : null;
 $gender = isset($_GET['gender']) ? $_GET['gender'] : null;
 $sort = isset($_GET['sort']) ? $_GET['sort'] : null;
+$No = isset($_GET['No']) ? $_GET['No'] : null;
 
 //Get books
 $data = $character->get_book_characters($id);
@@ -23,8 +24,10 @@ $character_arr = array();
 
 $characters = $data['characters'];
 $char_count = count($characters);
-
-for ($i = 0; $i < count($characters); $i++) {
+if ($No == null) {
+    $No = count($characters);
+}
+for ($i = 0; $i < $No; $i++) {
     $url = $characters[$i];
     $id = $character->get_character_id($url);
     $res = $character->get_characters($url);

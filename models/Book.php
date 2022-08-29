@@ -1,4 +1,8 @@
 <?php
+
+/**
+* @OA\Info(title="Findworker API", version="1.0")
+*/
 class Book {
     //Book Properties
     public $id;
@@ -13,7 +17,15 @@ class Book {
 
     }
 
-    //Get Books from datasource API "https://www.anapioficeandfire.com/api/books"
+    /**
+     * @OA\Get(
+     *     path="/findworker-task/api/book/get.php",
+     *     summary="Get Books from datasource API",
+     *     tags={"Books"},
+     *     @OA\Response(response="200", description="An example resource"),
+     *     @OA\Response(response="404", description="Not Found")
+     * )
+     */
     public function get_books() {
 
         //Initiate the curl call

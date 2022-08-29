@@ -41,6 +41,24 @@ class Comment {
         return false;
     }
 
+     /**
+     * @OA\Get(
+     *     path="/findworker-task/api/comment/get_comments.php",
+     *     summary="Get Comments for a book",
+     *     tags={"Comments"},
+     *     @OA\Parameter(
+     *          name="id",
+     *          in="query",
+     *          required=true,
+     *          description="Book id to get the all the comments",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Response(response="200", description="An example resource"),
+     *     @OA\Response(response="404", description="Not Found")
+     * )
+     */
     public function get_book_comments() {
         //Prepare the query
         $query = 'SELECT * FROM ' . $this->table . ' WHERE book_id = ?';

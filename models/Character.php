@@ -1,4 +1,5 @@
 <?php
+
 class Character {
     //Character properties
     public $id;
@@ -11,6 +12,60 @@ class Character {
 
     }
 
+    /**
+     * @OA\Get(
+     *     path="/findworker-task/api/character/get.php",
+     *     summary="Get characters for a book",
+     *     tags={"Characters"},
+     *     @OA\Parameter(
+     *          name="id",
+     *          in="query",
+     *          required=true,
+     *          description="Book id to get the all the characters",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Parameter(
+     *          name="No",
+     *          in="query",
+     *          required=true,
+     *          description="Number of characters for a book to get",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Parameter(
+     *          name="name",
+     *          in="query",
+     *          required=false,
+     *          description="Sort characters for a book to get by name",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Parameter(
+     *          name="gender",
+     *          in="query",
+     *          required=false,
+     *          description="Sort characters for a book to get by gender",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Parameter(
+     *          name="sort",
+     *          in="query",
+     *          required=false,
+     *          description="Filter characters for a book to get by gender",
+     *          @Oa\Schema(
+     *              type="string",
+     *          ),
+     *     ),
+     *     @OA\Response(response="200", description="An example resource"),
+     *     @OA\Response(response="404", description="Not Found")
+     * )
+     */
     public function get_book_characters($id) {
          //Initiate the curl call
         $curl = curl_init();
